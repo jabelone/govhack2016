@@ -1,6 +1,6 @@
 from wit import Wit
 
-access_token = "AXWYKJVTV3EXND5FPFJOS7HTIRHL4GW"
+access_token = "RAXWYKJVTV3EXND5FPFJOS7HTIRHL4GW"
 min_confidence = 0.7 #on a scale of 0 = 0% to 1 = 100%
 
 witty = Wit(access_token=access_token)
@@ -43,4 +43,9 @@ def get_the_query(phrase):
 
     return processed_data
 
-#Use it like this get_the_query(phrase_you_want_to_parse)
+#Use it like this:
+    # get_the_query(phrase_you_want_to_parse)
+
+    # example input: 'What is a school in brisbane city that\'s good at maths, a low short suspension rate, offers the indonesian language and good attendance?'
+    # example output: {'school': 'school', 'location': 'brisbane city', 'area': 'numeracy', 'attendance': 'good', 'suspension': 'short'}
+    #                             ^ an output of school means it wasn't specified
