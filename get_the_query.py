@@ -1,6 +1,6 @@
 from wit import Wit
 
-access_token = "RAXWYKJVTV3EXND5FPFJOS7HTIRHL4GW"
+access_token = "AXWYKJVTV3EXND5FPFJOS7HTIRHL4GW"
 min_confidence = 0.7 #on a scale of 0 = 0% to 1 = 100%
 
 witty = Wit(access_token=access_token)
