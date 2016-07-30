@@ -41,8 +41,6 @@ def get_the_query(phrase):
     if "language" in processed_phrase["entities"]: #If wit.ai found an attendance request
         processed_data["language"] = processed_phrase["entities"]["language"][0]["value"] #Set the suspension type returned
 
-    #print(processed_phrase["entities"]) #Print all the entities, uncomment if needed for debugging.
-
     return processed_data
 
-print(get_the_query(test))
+#Use it like this get_the_query(phrase_you_want_to_parse)
